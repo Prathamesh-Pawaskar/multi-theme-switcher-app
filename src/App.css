@@ -1,0 +1,101 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-padding);
+  width: 95%;
+  max-width: var(--container-width);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.5%;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--card-background-color);
+  padding: var(--spacing-padding);
+  font-family: var(--font-family);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.nav-links {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 1.5rem; /* space-x-6 */
+  }
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.theme-button {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border-radius: var(--card-radius);
+  outline: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  margin-top: 0.5rem;
+  width: 14rem; /* w-56 */
+  border-radius: var(--card-radius);
+  background-color: var(--card-background-color);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  text-align: left;
+  color: var(--text-color);
+}
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+}
+
+.theme2 .dropdown-menu {
+  background-color: var(--card-background-color);
+}
+.theme2 .dropdown-item {
+  color: #1e293b; /* slate-800 */
+}
+.theme2 .dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+}

@@ -1,0 +1,59 @@
+.theme1 {
+  --background-color: #ffffff;
+  --text-color: #1e293b; /* slate-800 */
+  --primary-color: #2563eb; /* blue-600 */
+  --secondary-color: #64748b; /* slate-500 */
+  --card-background-color: #f8fafc; /* slate-50 */
+  --button-text-color: #ffffff;
+  --link-color: #2563eb;
+  --link-hover-color: #1e40af;
+
+  --font-family: 'Inter', system-ui, sans-serif;
+  --font-weight: 500;
+
+  --spacing-padding: 1.25rem; /* p-5 */
+  --card-radius: 0.5rem; /* rounded-lg */
+  --container-width: 100%; /* Set to 100% for full width */
+  --layout-grid-columns: 3;
+  --layout-gap: 2rem; /* gap-8 */
+}
+
+.theme2 {
+  --background-color: #0f172a; /* slate-900 */
+  --text-color: #f1f5f9; /* slate-100 */
+  --primary-color: #14b8a6; /* teal-500 */
+  --secondary-color: #94a3b8; /* slate-400 */
+  --card-background-color: #1e293b; /* slate-800 */
+  --button-text-color: #ffffff;
+  --link-color: #14b8a6;
+  --link-hover-color: #0d9488;
+
+  --font-family: 'Space Grotesk', sans-serif;
+  --font-weight: 600;
+
+  --spacing-padding: 1.5rem; /* p-6 */
+  --card-radius: 0.75rem; /* rounded-xl */
+  --container-width: 100%; /* Set to 100% for full width */
+  --layout-grid-columns: 3;
+  --layout-gap: 2.5rem; /* gap-10 */
+}
+
+.theme3 {
+  --background-color: #fff8f1;
+  --text-color: hsl(0, 0%, 18%);
+  --primary-color: #c35d13; /* orange-500 */
+  --secondary-color: #10b981; /* emerald-500 */
+  --card-background-color: #ffffff;
+  --button-text-color: #ffffff;
+  --link-color: #f97316;
+  --link-hover-color: #ea580c;
+
+  --font-family: 'Pacifico', cursive;
+  --font-weight: 400;
+
+  --spacing-padding: 2rem; /* p-8 */
+  --card-radius: 1.25rem; /* rounded-2xl */
+  --container-width: 100%; /* Set to 100% for full width */
+  --layout-grid-columns: 3;
+  --layout-gap: 2rem; /* gap-8 */
+}

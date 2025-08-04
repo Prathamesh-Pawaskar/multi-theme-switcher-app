@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import './themes/variables.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family); 
+  transition: background-color 0.3s ease, color 0.3s ease, font-family 0.3s ease;
+  min-height: 100vh;
+}
+
+
+.main-content {
+  margin: auto;
+  max-width: var(--container-width);
+  padding: var(--spacing-padding);
+}
+
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 1024px) {
+  .app-container .lg\:ml-64 {
+    margin-left: 16rem; /* 64 = 16rem */
+  }
+}
