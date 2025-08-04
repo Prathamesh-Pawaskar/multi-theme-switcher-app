@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# Thematic React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a modern React application that showcases a dynamic theming system, a responsive layout, and data visualization. It is built with a component-based architecture and utilizes CSS variables for a highly maintainable and customizable design. The application fetches product data from a mock API and displays it in a grid and a dynamic chart.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- Features
+- Technologies Used
+- Project Structure
+- How to Run Locally
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Dynamic Theming**: Users can switch between three distinct themes, each with its own color palette, typography, and layout. The styling is managed using CSS variables for easy updates.
+- **Responsive Layout**: The application's layout adapts seamlessly to various screen sizes, ensuring an optimal viewing experience on both desktop and mobile devices.
+- **Product Grid Display**: The main content area displays product information in a responsive grid layout.
+- **Data Visualization**: A bar chart visualizes product data by category, with its colors and text dynamically updated to match the current theme.
+- **Client-Side Routing**: The application uses React Router to handle navigation between different pages (Home, About, Contact) without a full page reload.
+- **Mock API Integration**: Product data is fetched asynchronously from a simple, internal mock API, demonstrating a common web development pattern.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React: A JavaScript library for building user interfaces.
+- React Router DOM: Used for declarative routing in the application.
+- Chart.js: A powerful and flexible open-source charting library for data visualization.
+- CSS Variables: A core part of the theming system, allowing for dynamic color, font, and spacing changes.
+- Heroicons: A collection of free, MIT-licensed high-quality SVG icons for the UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+The project follows a standard React application structure, organized to keep related components and files together.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+project-root/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── public/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+├── src/
 
-### `npm run eject`
+│ ├── api/                # API utility functions (e.g., fetchProducts.ts)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+│ │ ├── api.ts 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│ ├── components/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+│ │ ├── data-display/     # Components for displaying data (e.g., ProductChart.tsx)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+│ │ └── layout/           # Shared layout components (Header.tsx, Layout.tsx)
 
-## Learn More
+│ ├── context/            # ThemeContext for state management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+│ │ └── ThemeContext.tsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+│ ├── pages/              # Page-level components (HomePage.tsx, AboutPage.tsx)
+
+│ │ ├── AboutPage.tsx
+
+│ │ ├── ContactPage.tsx
+
+│ │ └── HomePage.tsx
+
+│ ├── themes/             # Theme definitions and CSS variables
+
+│ │ ├── themes.ts
+
+│ │ └── variables.css 
+
+│ ├── App.css
+
+│ ├── App.tsx
+
+│ ├── index.css
+
+│ └── index.tsx
+
+├── package.json
+
+└── README.md
+
+## How to Run Locally
+
+Follow these steps to set up and run the project on your local machine:
+
+1.  **Clone the repository:**
+
+    git clone https://github.com/Prathamesh-Pawaskar/multi-theme-switcher-app.git
+
+    cd multi-theme-switcher-app
+
+2.  **Install dependencies:**
+
+    npm install
+
+3.  **Start the development server:**
+
+    npm start
+    
+    The application will open in your browser at `http://localhost:3000`.
